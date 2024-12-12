@@ -33,7 +33,7 @@
     right: 0;
     background-color: var(--primary);
     height: 200px;
-    width: 400px;
+    width: 360px;
     z-index: -10;
 }
 
@@ -49,8 +49,8 @@
 
 .container_cover {
     position: absolute;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
     border-top: 100px solid var(--primary);
     border-bottom: 100px solid transparent;
 
@@ -67,15 +67,15 @@
     /*  */
     z-index: -1;
     background: rgba(254, 249, 249, 0.85);
-    width: 390px;
+    width: 350px;
     height: 180px;
 
     transition: all .75s;
 }
 
 .container_body {
-    border-left: 200px solid var(--tertary);
-    border-right: 200px solid var(--tertary);
+    border-left: 180px solid var(--tertary);
+    border-right: 180px solid var(--tertary);
     border-top: 100px solid transparent;
     border-bottom: 100px solid var(--secondary);
 }
