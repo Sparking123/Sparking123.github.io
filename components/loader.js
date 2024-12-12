@@ -49,7 +49,7 @@ function loadCardMedia(medios, container) {
         const card_content = document.createElement("div");
         const card_text = document.createElement("p");
 
-        card.classList.add("galery_card", array.sizeh, array.sizew)
+        card.classList.add("galery_card", "hsmall", "wmedium")
         card_media.className = "card_img";
         card_content.className = "card_content";
         card_text.textContent = array.descripcion;
