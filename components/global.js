@@ -1,18 +1,21 @@
-//counter
-const OlderAge = '2026-09-18T00:00:00'; 
+//timer
 const PairDate = '2024-10-17T00:00:00'; 
-const TwoMonths = "2024-12-17T00:00:00";
+const NextAniversaryM = "2024-12-17T00:00:00";
+const NextAniversaryY = "2025-10-17T00:00:00";
+
+const OlderAge = '2026-09-18T00:00:00'; 
 
 function updateTimers() {
-    updateTimeToFuture(OlderAge, "OldAge", "+18 años 🥺 en: ");
-    updateTimeFromPast(PairDate, "Ago", "Juntos desde hace");
+    timer(OlderAge, "#OldAge", "+18 años 🥺 en: ", true);
+    timer(PairDate, "#Ago", "Juntos desde hace", false);
+    timer(NextAniversaryM, "#blockertxt", "Disponible en: ", true);
 }
 
 setInterval(updateTimers, 1000);
 
 //typewriter
-const MiE = document.getElementById("MI");
-const PhrasesE = document.getElementById("Phrases");
+const MiE = document.querySelector("#MI");
+const PhrasesE = document.querySelector("#Phrases");
 let Index = 0;
 let Index2 = 0;
 
@@ -101,3 +104,15 @@ loadCardMedia(medios_vid, container_galeryUs_vid);
 loadCardMedia(medios_imgM, container_galeryUs_imgM);
 
 loadSheList(features, container_listShe);
+
+//Blocker
+const blocker = document.querySelector("#blocker");
+const mother = document.querySelector("#mother");
+
+const today = new Date();
+
+
+if(NextAniversaryM == today){
+    mother.style.display = "block";
+    blocker.style.display = "none";
+}
