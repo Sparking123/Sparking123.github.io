@@ -174,7 +174,7 @@ body {
     padding: 0;
 }
 
-.she_list:hover :not(.she_list_item:hover) && {
+.she_list:hover :not(.she_list_item:hover) {
     opacity: 0.7;
 }
 
