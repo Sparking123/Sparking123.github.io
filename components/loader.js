@@ -59,11 +59,11 @@ function loadCardMedia(medios, container) {
         if (array.tipo === "imagen") {
             media = document.createElement("img");
             media.alt = "Imagen";
-            media.src = "../assets/images/" + array.ruta;
+            media.src = "assets/images/" + array.ruta;
         } else if (array.tipo === "video") {
             media = document.createElement("video");
             media.controls = true;
-            media.src = "../assets/videos/" + array.ruta;
+            media.src = "assets/videos/" + array.ruta;
         } else {
             console.warn("Tipo de array no soportado:", array.tipo);
             return;
