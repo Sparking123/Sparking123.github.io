@@ -172,6 +172,7 @@ body {
     aspect-ratio: 1;
     border-radius: 10px;
     overflow: hidden;
+    margin: 10px;
 }
 
 .she_img img{
