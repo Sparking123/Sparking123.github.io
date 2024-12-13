@@ -166,6 +166,12 @@ body {
     }
 }
 
+.she_img{
+    float: left;
+    aspect-ratio: 1;
+    shape-outside: 50%;
+}
+
 .she_list{
     display: flex;
     flex-wrap: wrap;
