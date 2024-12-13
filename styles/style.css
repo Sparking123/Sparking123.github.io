@@ -168,8 +168,14 @@ body {
 
 .she_img{
     float: left;
+    width: 50px;
     aspect-ratio: 1;
     shape-outside: 50%;
+}
+
+.she_img img{
+    width: 100%;
+    height: 100%;
 }
 
 .she_list{
