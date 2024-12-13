@@ -166,4 +166,43 @@ body {
     }
 }
 
+.she_list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+}
 
+.she_list:hover :not(.she_list_item:hover) && {
+    opacity: 0.7;
+}
+
+.she_list_item{
+    flex: 1 0 120px;
+    background-color: var(--comp-blue-l2);
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--contrast-d);
+    text-align: center;
+    box-shadow: var(--comp-blue) 2px 2px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.she_list_item:hover{
+    scale: 1.02;
+}
+
+
+
+.she_list_item p{
+
+}
+
+
+.contributions{
+
+}

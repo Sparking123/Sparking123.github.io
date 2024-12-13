@@ -1,3 +1,15 @@
+
+const OlderAge = '2026-09-18T00:00:00'; 
+const PairDate = '2024-10-17T00:00:00'; 
+const TwoMonths = "2024-12-17T00:00:00";
+
+function updateTimers() {
+    updateTimeToFuture(OlderAge, "OldAge", "+18 años 🥺 en: ");
+    updateTimeFromPast(PairDate, "Ago", "Juntos desde hace");
+}
+
+setInterval(updateTimers, 1000);
+
 function calculateTimeDifference(startDate, endDate) {
     const totalMilliseconds = Math.abs(endDate - startDate);
 
@@ -11,32 +23,30 @@ function calculateTimeDifference(startDate, endDate) {
     return { years, months, days, hours, minutes, seconds };
 }
 //faltan
-function updateTimeToFuture(date, place) {
+function updateTimeToFuture(date, place, msj) {
     const futureDate = new Date(date);
     const now = new Date();
     const timeDifference = calculateTimeDifference(now, futureDate);
 
-    document.getElementById(place).textContent = 
-        `${timeDifference.years} años, ${timeDifference.months} meses, ${timeDifference.days} días, ${timeDifference.hours} horas, ${timeDifference.minutes} minutos, ${timeDifference.seconds} segundos`;
+    const yearsText = timeDifference.years > 1 ? `${timeDifference.years} años, ` : timeDifference.years == 1 ? `${timeDifference.years} año, ` : "";
+    const monthsText = timeDifference.months > 1 ? `${timeDifference.months} meses, ` : `${timeDifference.months} mes, `;
+    const msjShow = `${msj} ${yearsText} ${monthsText} ${timeDifference.days} días, ${timeDifference.hours} horas, ${timeDifference.minutes} minutos, ${timeDifference.seconds} segundos`;
+
+    document.getElementById(place).textContent = msjShow;
 }
 //hace
-function updateTimeFromPast(date, place) {
+function updateTimeFromPast(date, place, msj) {
     const pastDate = new Date(date);
     const now = new Date();
     const timeDifference = calculateTimeDifference(pastDate, now);
 
-    document.getElementById(place).textContent = 
-        `${timeDifference.years} años, ${timeDifference.months} meses, ${timeDifference.days} días, ${timeDifference.hours} horas, ${timeDifference.minutes} minutos, ${timeDifference.seconds} segundos`;
+    const yearsText = timeDifference.years > 1 ? `${timeDifference.years} años, ` : timeDifference.years == 1 ? `${timeDifference.years} año, ` : "";
+    const monthsText = timeDifference.months > 1 ? `${timeDifference.months} meses, ` : `${timeDifference.months} mes, `;
+
+    const msjShow = `${msj} ${yearsText} ${monthsText} ${timeDifference.days} días, ${timeDifference.hours} horas, ${timeDifference.minutes} minutos, ${timeDifference.seconds} segundos`;
+
+    document.getElementById(place).textContent = msjShow;
 }
 
-const OlderAge = '2026-09-18T00:00:00'; 
-const PairDate = '2024-10-17T00:00:00'; 
-const TwoMonths = "2024-12-17T00:00:00";
 
-function updateTimers() {
-    updateTimeToFuture(OlderAge, "OldAge");
-    updateTimeFromPast(TwoMonths, "Two");
-    updateTimeFromPast(PairDate, "PairDate");
-}
 
-setInterval(updateTimers, 1000);

@@ -26,7 +26,7 @@ const medios_img = [
 const medios_vid = [
     { tipo: "video", ruta: "vu1.mp4", descripcion: "Filmes de nuestro segundo día del cual salió tremendo documental y todo, recuerditos de las maldades de esos manes", sizew: "wmedium", sizeh: "wsmall" },
     { tipo: "video", ruta: "vu2.mp4", descripcion: "Tremendaaa pena, la traición... Mirate como te mueres de pena 🥺 pero aun así seguiste conmigo. Mi niña penosa 🤗", sizew: "wmedium", sizeh: "hsmall" },
-    { tipo: "video", ruta: "vu3.mp4", descripcion: "Día posterior al que donde comenzamos nuestro noviazgo, tú y tu jueguito de Temu que ni has termiado", sizew: "wmedium", sizeh: "hsmall" },
+    { tipo: "video", ruta: "vu3.mp4", descripcion: "Día posterior al que donde comenzamos nuestro noviazgo, tú y tu jueguito de Temu que ni has terminado", sizew: "wmedium", sizeh: "hsmall" },
     { tipo: "video", ruta: "vu4.mp4", descripcion:'"Me va a besa que emociooon"... "Me besó"... *Coloca un sonrisita que me enamora mucho más', sizew: "wsmall", sizeh: "hsmall" },
     { tipo: "video", ruta: "vu5.mp4", descripcion: "*Pocas expresiones", sizew: "wsmall", sizeh: "hsmall" },
 ];
@@ -49,7 +49,7 @@ function loadCardMedia(medios, container) {
         const card_content = document.createElement("div");
         const card_text = document.createElement("p");
 
-        card.classList.add("galery_card", "hsmall", "wmedium")
+        card.classList.add("galery_card", "hmedium", "wmedium")
         card_media.className = "card_img";
         card_content.className = "card_content";
         card_text.textContent = array.descripcion;
@@ -77,3 +77,5 @@ function loadCardMedia(medios, container) {
         container.appendChild(card);
     });
 }
+
+
