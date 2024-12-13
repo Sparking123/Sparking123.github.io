@@ -168,10 +168,9 @@ body {
 
 .she_img{
     float: left;
-    width: 200px;
+    width: 150px;
     aspect-ratio: 1;
-    shape-outside: 50%;
-    shape-margin: 10px;
+    border-radius: 10px;
     overflow: hidden;
 }
 
