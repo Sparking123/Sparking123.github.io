@@ -41,7 +41,7 @@ function loadSheList(items, container) {
         const item_list = document.createElement("li");
         const txt_list = document.createElement("p");
 
-        item_list.classList.add("list_item", "she_list_item");
+        item_list.classList.add("list_item", "she");
 
         txt_list.textContent = element;
         item_list.appendChild(txt_list);

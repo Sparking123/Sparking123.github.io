@@ -38,7 +38,7 @@ function timer(date, place, msj, isFuture) {
             const seconds = timeDifference.seconds;
         
             const yearsText = years > 1 ? `${years} años,` : years == 1 ? `${years} año,` : "";
-            const monthsText = months > 1 ? `${months} meses,` : months == 1 ? `${months}mes,` : "";
+            const monthsText = months > 1 ? `${months} meses,` : months == 1 ? `${months} mes,` : "";
             const daysText = days > 1 ? `${days} dias,`  : days == 1 ? `${days} año,` : "";
             const hoursText = hours > 1 ? `${hours} horas,`  : hours == 1 ? `${hours} año,` : "";
             const minutesText = minutes > 1 ? `${minutes} minutos,` : minutes == 1 ? `${minutes} minuto,` : "" ;

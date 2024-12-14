@@ -54,7 +54,7 @@ const medios_img = [
     { tipo: "imagen", ruta: "u5.jpg", sizew: "wsmall", sizeh: "hsmall",
         descripcion: "Nuestro segundo día conociendonos - Se nota esa tensión de una manera, pero aún así seguimos hablando. Gracias por darme esa oportunidad 🤗."},
     { tipo: "imagen", ruta: "u4.jpg", sizew: "wsmall", sizeh: "hsmall", 
-        descripcion: "No pensé que este sería nuestro ultimo día en vernos de este año, pero fue uno en donde más compartimos tiempo juntos."},
+        descripcion: "No pensé que este sería nuestro ultimo día en vernos de este año, pero fue uno en donde más compartimos tiempo juntos. Fue un día muyyy bonito"},
     { tipo: "imagen", ruta: "u6.jpg", sizew: "wmedium", sizeh: "wsmall", 
         descripcion: "Ojitos chititos con ojitos microscópicos ♡♡"},
     { tipo: "imagen", ruta: "u2.jpg", sizew: "wsmall", sizeh: "hsmall", 
@@ -62,9 +62,9 @@ const medios_img = [
     { tipo: "imagen", ruta: "u3.jpg", sizew: "wsmall", sizeh: "hsmall", 
         descripcion: "Todavia sigo agradecido con ese gesto ♡"},
     { tipo: "imagen", ruta: "u7.jpg", sizew: "wsmall", sizeh: "hsmall", 
-        descripcion: "El día del gran robo 😋, me dejaste muy pensativo con eso, mis sentimientos por tí se reafirmaron"},
+        descripcion: "El día del gran robo 😋, me dejaste muy pensativo con eso, mis sentimientos por tí se reafirmaron mucho más ♡"},
     { tipo: "imagen", ruta: "u8.jpg", sizew: "wsmall", sizeh: "hsmall", 
-        descripcion: '"Y esa camisa, ¿Acaso vienes a conquistarme?"'},
+        descripcion: '"Y esa camisa, ¿Acaso vienes a conquistarme?" *con una voz tan tiernaaa'},
     { tipo: "imagen", ruta: "u1.jpg", sizew: "wmedium", sizeh: "wsmall", 
         descripcion: "De esos días donde pudimos compartir muchos tiempo a solas, supremamente espectaculares esos momentos..."},
     { tipo: "imagen", ruta: "u9.jpg", sizew: "wmedium", sizeh: "hsmall", 
@@ -72,7 +72,7 @@ const medios_img = [
 ];
 
 const medios_vid = [
-    { tipo: "video", ruta: "vu1.mp4", descripcion: "Filmes de nuestro segundo día del cual salió tremendo documental y todo, recuerditos de las maldades de esos manes", sizew: "wmedium", sizeh: "wsmall" },
+    { tipo: "video", ruta: "vu1.mp4", descripcion: "Filmes de nuestro segundo día del cual salió tremendo documental y todo, recuerditos de las maldades de esos manes jajaja", sizew: "wmedium", sizeh: "wsmall" },
     { tipo: "video", ruta: "vu2.mp4", descripcion: "Tremendaaa pena, la traición... Mirate como te mueres de pena 🥺 pero aun así seguiste conmigo. Mi niña penosa 🤗", sizew: "wmedium", sizeh: "hsmall" },
     { tipo: "video", ruta: "vu3.mp4", descripcion: "Día posterior al que donde comenzamos nuestro noviazgo, tú y tu jueguito de Temu que ni has terminado", sizew: "wmedium", sizeh: "hsmall" },
     { tipo: "video", ruta: "vu4.mp4", descripcion:'"Me va a besa que emociooon"... "Me besó"... *Coloca un sonrisita que me enamora mucho más', sizew: "wsmall", sizeh: "hsmall" },
@@ -112,7 +112,7 @@ const mother = document.querySelector("#mother");
 const today = new Date();
 
 
-if(NextAniversaryM == today){
+if(NextAniversaryY == today){
     mother.style.display = "block";
     blocker.style.display = "none";
 }
