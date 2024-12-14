@@ -65,6 +65,7 @@ body {
     display: flex;
     width: 100%;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .list_item{
@@ -216,6 +217,11 @@ img, video{
     scale: 1.02;
 }
 
+.list.audio_list{
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
 
 /* animations */
 @keyframes l1 {to{transform: rotate(.5turn)}}

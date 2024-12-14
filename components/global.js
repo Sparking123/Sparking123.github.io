@@ -112,7 +112,7 @@ const mother = document.querySelector("#mother");
 const today = new Date();
 
 
-if(NextAniversaryY == today){
+if(today == today){
     mother.style.display = "block";
     blocker.style.display = "none";
 }
