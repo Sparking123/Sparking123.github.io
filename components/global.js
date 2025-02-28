@@ -69,6 +69,8 @@ const medios_img = [
         descripcion: "De esos días donde pudimos compartir muchos tiempo a solas, supremamente espectaculares esos momentos..."},
     { tipo: "imagen", ruta: "u9.jpg", sizew: "wmedium", sizeh: "hsmall", 
         descripcion: "Nuestra primera fotico 🥺, si no estoy mal fue la primera besuqueada que no dimos, ricoooo 😋"},
+    { tipo: "imagen", ruta: "u10.jpg", sizew: "wmedium", sizeh: "hsmall", 
+        descripcion: "Después de tanto tiempo de no vernos, preciso nos vemos y nos descubren... Pero por algo pasó no? Está en lo planes de Dios. Pero aun asi disfruté ese día junto a mi nena tiquiiiita🥰, pd: me encanta ese pelito"},
 ];
 
 const medios_vid = [
